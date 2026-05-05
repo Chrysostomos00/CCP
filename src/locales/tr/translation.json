@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "about": "Hakkımızda",
+    "rights": "Haklarımız",
+    "foni": "FONI Elçileri",
+    "news": "Haberler & Etkinlikler",
+    "getInvolved": "Katılın"
+  },
+  "header": {
+    "logoTitle1": "Kıbrıs Çocuk",
+    "logoTitle2": "Parlamentosu"
+  },
+  "hero": {
+    "headline_pt1": "Çocuklara Bir",
+    "headline_pt1_hl": "Ses.",
+    "headline_pt2": "Geleceğimizi",
+    "headline_pt2_hl": "Şekillendiriyoruz.",
+    "subheadline": "Kıbrıs Çocuk Parlamentosu'na hoş geldiniz. Haklarınızı savunmaya, fikirlerinizi yükseltmeye ve toplumumuzda gerçek bir etki yaratmaya adadık kendimizi.",
+    "btnRights": "Haklarını Keşfet",
+    "btnMeet": "Üyelerle Tanışın",
+    "scroll": "Keşfet"
+  },
+  "home": {
+    "aboutBriefTitle": "Çocuk Parlamentosu Nedir?",
+    "aboutBriefText": "Kıbrıs Çocuk Parlamentosu (CCP), çocukların katılım haklarını desteklemek amacıyla 2001 yılında kurulmuş, çocuk liderliğinde bir sivil toplum kuruluşudur.",
+    "btnLearnMore": "Hakkımızda Daha Fazla Bilgi Edinin",
+    "rightsCtaTitle": "Haklarını Bil!",
+    "rightsCtaText": "BM Çocuk Hakları Sözleşmesi senin kalkanındır. Oku, öğren ve uygula.",
+    "rightsCtaBtn": "54 Maddeyi Keşfet"
+  },
+  "footer": {
+    "title": "Kıbrıs Çocuk Parlamentosu",
+    "desc": "2001'den beri çocuk hakları ve refahını savunuyoruz. Geleceğimizi birlikte şekillendiriyoruz.",
+    "contact": "İletişim",
+    "privacy": "Gizlilik Politikası",
+    "supportedBy": "Tarafından desteklenmekte ve sürdürülmektedir",
+    "pccpwcLink": "pccpwc.org'u ziyaret edin",
+    "copyright": "Kıbrıs Çocuk Parlamentosu. Tüm hakları saklıdır."
+  },
+  "foni": {
+    "title": "Sesleri Güçlendiriyor, Sessizliği Bozuyoruz.",
+    "desc": "FONI, çocukları cinsel istismardan korumak için aktif olarak çalışır; her çocuğun güvenlik hakkı için güvenli alanları, eğitimi ve sarsılmaz desteği teşvik eder.",
+    "viewAll": "Tüm 56 Üyeyi Gör",
+    "ambassadors": {
+      "1": { "name": "Maria K.", "quote": "Sessizliği bozmak ilk adımdır.", "district": "Lefkoşa" },
+      "2": { "name": "Andreas P.", "quote": "Her çocuk için güvenli alanlar.", "district": "Limasol" },
+      "3": { "name": "Elena S.", "quote": "Eğitim korumayı güçlendirir.", "district": "Larnaka" },
+      "4": { "name": "Giorgos M.", "quote": "Gençliği dinleyin.", "district": "Baf" },
+      "5": { "name": "Sofia T.", "quote": "Ruh sağlığı önemlidir.", "district": "Mağusa" }
+    }
+  },
+  "rights": {
+    "title": "Çocuk Hakları Sözleşmesi",
+    "desc": "Haklarını oku, anla ve talep et. Yakında 54 maddenin tamamı için interaktif oyunlar ve animasyonlar ekleyeceğiz!",
+    "hover": "Okumak için üzerine gelin",
+    "playGame": "Oyun Oyna",
+    "articles": {
+      "12": { "title": "Madde 12", "short": "Çocuğun görüşlerine saygı", "full": "Her çocuk, kendisini etkileyen her konuda görüşlerini, duygularını ve isteklerini ifade etme, görüşlerinin dikkate alınmasını ve ciddiye alınmasını sağlama hakkına sahiptir." },
+      "2": { "title": "Madde 2", "short": "Ayrımcılık yapılamaz", "full": "Sözleşme, etnik kökeni, cinsiyeti, dini, dili, yetenekleri veya başka herhangi bir durumu ne olursa olsun ayrım yapılmaksızın her çocuk için geçerlidir." },
+      "3": { "title": "Madde 3", "short": "Çocuğun üstün yararı", "full": "Çocukları etkileyen tüm karar ve eylemlerde çocuğun üstün yararı birinci öncelik olmalıdır." },
+      "28": { "title": "Madde 28", "short": "Eğitim hakkı", "full": "Her çocuğun eğitim hakkı vardır. İlköğretim ücretsiz olmalı ve ortaöğretimin farklı biçimleri her çocuğa açık olmalıdır." },
+      "31": { "title": "Madde 31", "short": "Dinlenme, oyun, kültür, sanat", "full": "Her çocuğun dinlenme, oynama ve çok çeşitli kültürel ve sanatsal etkinliklere katılma hakkı vardır." },
+      "19": { "title": "Madde 19", "short": "Şiddetten korunma", "full": "Hükümetler, çocukların her türlü şiddet, istismar, ihmal ve kötü muameleden korunmasını sağlamak için ellerinden gelen her şeyi yapmalıdır." }
+    }
+  },
+  "about": {
+    "headerTitle": "Kıbrıs Çocuk Parlamentosu Hakkında",
+    "headerDesc": "2001 yılında kurulan, 18 yaşın altındaki kişilere söz hakkı veren çocuk liderliğindeki bir kurumuz.",
+    "historyTitle": "Tarihçemiz",
+    "historyP1": "Kıbrıs Çocuk Parlamentosu 2001 yılında kuruldu. Bir grup çocuğun sembolik olarak Parlamentomuz üyelerinin koltuklarını işgal ettiği geleneksel ÇOCUK HAFTASI etkinliğinin bir gelişimiydi.",
+    "historyP2": "Parlamento Başkanımızın desteğiyle, sembolik etkinliğin Parlamentonun normal oturumlarının taklidi olarak ve kendi Başkanlığı altında resmi bir oturuma dönüşmesine karar verildi. Bir sonraki adım, Çocuk Parlamentosunu sadece Çocuk Haftası etkinliği olarak değil, yıl boyunca faaliyet gösteren daimi bir organ olarak kurmaktı.",
+    "whatIsTitle": "Çocuk Parlamentosu Nedir?",
+    "whatIsP1": "Kıbrıs Çocuk Parlamentosu (CCP), çocukların katılım haklarını geliştirmek ve aksi takdirde aşağı yukarı \"görünmez\" olan 18 yaş altı kişilere söz hakkı vermek temel amacıyla 2000 yılında kurulmuş çocuk liderliğinde sivil toplum kuruluşudur.",
+    "whatIsP2": "83 üyeden oluşmaktadır (Anayasa tarafından tanınan 5 etnik grubu temsil eden 56 Kıbrıslı Rum, 24 Kıbrıslı Türk, 1 Maronit, 1 Latin ve 1 Ermeni). Üyeler Kıbrıs'ın tüm şehirlerinden gelmekte olup, iki yılda bir tüm Liselerdeki öğrenciler tarafından seçilmektedir. Görev süremiz 2 yıldır.",
+    "whatIsP3": "Her ayın başında kendi bölgemizde ve her 3 ayda bir Pan-Kıbrıs düzeyinde toplantılar yapıyoruz. Yılda bir kez de Ulusal Parlamento'da Temsilciler Meclisi Başkanı ile toplantı yapıyoruz.",
+    "missionTitle": "Misyonumuz Nedir?",
+    "mission1": "Akranlarımızı etkileyen herhangi bir sorunla başa çıkmak için elimizden gelenin en iyisini yapmak ve soruna çözümler önermek.",
+    "mission2": "Tüm sosyoekonomik seviyelerden farklı çocukları etkileyen tüm sorunlara eşit önem vermek.",
+    "mission3": "Kıbrıs'ta Çocuk Hakları Sözleşmesinin uygulanmasını talep etmek.",
+    "mission4": "CCP'nin çocuk üyelerini fikirlerini ifade etmeye ve sonrasında argümanlarla gerekçelendirmeye teşvik etmek.",
+    "mission5": "Kurumumuzu tanıtmak ve Kıbrıs'taki çocuklara saf bir motivasyonla hakları için savaşan birilerinin olduğunu bildirmek.",
+    "accTitle": "Başarılarımız",
+    "acc1": "2005: Çocukların sonuçlarla yüzleşmeden önce hatalarını anlama fırsatı bulması için liselerdeki cezalandırıcı yönetmeliklerde değişiklikler önerildi.",
+    "acc2": "2006: Özel ihtiyaçları olan çocuklara uyum sağlamak için okul binalarında yapısal değişiklikleri hızlandırdı.",
+    "acc3": "2007: Çocuk Hakları Komiseri atanması talebiyle başkanlık sarayı önünde protesto düzenlendi. Protestonun yoğunluğu nedeniyle başkan bir komiser atamaya karar verdi!",
+    "impactTitle": "Hayatımızdaki Değeri ve Etkisi",
+    "impactQuote": "\"CCP hayatımızı farklı şekillerde etkiledi. Eleştirel düşüncemizi geliştirmemize ve sosyal meseleler hakkında daha duyarlı olmamıza yardımcı oldu. Takım çalışması becerilerimizi geliştirmemize ve özgüvenimizi artırmamıza yardımcı oldu. Bu kurum, haklarını önemseyen ve onlar için savaşan aktif vatandaşlar yetiştiriyor.\"",
+    "sidebarTitle": "PCCPWC Tarafından Desteklenmektedir",
+    "sidebarDesc": "Kıbrıs Çocukları Koruma ve Refah Koordinasyon Komitesi, Çocuk Haklarını korur ve destekler, CCP için destekleyici bir organ olarak hizmet eder.",
+    "sidebarBtn": "PCCPWC'yi Ziyaret Edin",
+    "sidebarGraphic": "Gençliği Güçlendirmek"
+  }
+}

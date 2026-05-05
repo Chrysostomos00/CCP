@@ -1,0 +1,122 @@
+.footer {
+  background-color: var(--color-blue);
+  color: white;
+  padding: var(--spacing-xl) 0 var(--spacing-lg) 0;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+  .footerGrid {
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+  }
+}
+
+.orgInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoRow {
+  background: white;
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  display: inline-block;
+  margin-bottom: var(--spacing-sm);
+  align-self: flex-start;
+}
+
+.ccpLogo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footerDesc {
+  color: rgba(255,255,255,0.9);
+  font-size: 1rem;
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+.colTitle {
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-yellow);
+}
+
+.linksColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.links a {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.motherOrg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgba(0,0,0,0.1);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  align-self: flex-start;
+}
+
+.supportedBy {
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.pccpwcLogo {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: var(--spacing-sm);
+  background: white;
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.pccpwcLink {
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.pccpwcLink:hover {
+  color: var(--color-yellow);
+}
+
+.copyright {
+  text-align: center;
+  padding-top: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+  border-top: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.6);
+  font-size: 0.9rem;
+}

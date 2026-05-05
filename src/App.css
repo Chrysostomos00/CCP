@@ -1,0 +1,5 @@
+/* App-specific styles if any, else empty. We'll use CSS modules for components. */
+.app-container {
+  position: relative;
+  width: 100%;
+}

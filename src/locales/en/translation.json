@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "about": "About Us",
+    "rights": "Our Rights",
+    "foni": "FONI Ambassadors",
+    "news": "News & Events",
+    "getInvolved": "Get Involved"
+  },
+  "header": {
+    "logoTitle1": "Cyprus Children's",
+    "logoTitle2": "Parliament"
+  },
+  "hero": {
+    "headline_pt1": "Giving Children a",
+    "headline_pt1_hl": "Voice.",
+    "headline_pt2": "Shaping Our",
+    "headline_pt2_hl": "Future.",
+    "subheadline": "Welcome to the Cyprus Children's Parliament. We are dedicated to advocating for your rights, amplifying your ideas, and making a real impact in our society.",
+    "btnRights": "Discover Your Rights",
+    "btnMeet": "Meet the Members",
+    "scroll": "Explore"
+  },
+  "home": {
+    "aboutBriefTitle": "What is the CCP?",
+    "aboutBriefText": "The Cyprus Children's Parliament (CCP) is a child-led non-governmental institution established in 2001 with the primary aim to promote children's participatory rights.",
+    "btnLearnMore": "Learn More About Us",
+    "rightsCtaTitle": "Know Your Rights!",
+    "rightsCtaText": "The UN Convention on the Rights of the Child is your shield. Read, learn, and enforce them.",
+    "rightsCtaBtn": "Explore 54 Articles"
+  },
+  "footer": {
+    "title": "Cyprus Children's Parliament",
+    "desc": "Advocating for children's rights and welfare since 2001. Shaping our future together.",
+    "contact": "Contact Us",
+    "privacy": "Privacy Policy",
+    "supportedBy": "Supported and maintained by the",
+    "pccpwcLink": "Visit pccpwc.org",
+    "copyright": "Cyprus Children's Parliament. All rights reserved."
+  },
+  "foni": {
+    "title": "Empowering Voices, Breaking the Silence.",
+    "desc": "FONI actively works to protect children from sexual abuse, promoting safe spaces, education, and unwavering support for every child's right to safety.",
+    "viewAll": "View All 56 Members",
+    "ambassadors": {
+      "1": { "name": "Maria K.", "quote": "Breaking the silence is the first step.", "district": "Nicosia" },
+      "2": { "name": "Andreas P.", "quote": "Safe spaces for every child.", "district": "Limassol" },
+      "3": { "name": "Elena S.", "quote": "Education empowers protection.", "district": "Larnaca" },
+      "4": { "name": "Giorgos M.", "quote": "Listen to the youth.", "district": "Paphos" },
+      "5": { "name": "Sofia T.", "quote": "Mental health matters.", "district": "Famagusta" }
+    }
+  },
+  "rights": {
+    "title": "The Convention on the Rights of the Child",
+    "desc": "Read, understand, and demand your rights. We will be adding interactive games and detailed animations for all 54 articles soon!",
+    "hover": "Hover to read",
+    "playGame": "Play Game",
+    "articles": {
+      "12": { "title": "Article 12", "short": "Respect for the child's views", "full": "Every child has the right to express their views, feelings and wishes in all matters affecting them, and to have their views considered and taken seriously." },
+      "2": { "title": "Article 2", "short": "No discrimination", "full": "The Convention applies to every child without discrimination, whatever their ethnicity, sex, religion, language, abilities or any other status." },
+      "3": { "title": "Article 3", "short": "Best interests of the child", "full": "The best interests of the child must be a top priority in all decisions and actions that affect children." },
+      "28": { "title": "Article 28", "short": "Right to education", "full": "Every child has the right to an education. Primary education must be free and different forms of secondary education must be available to every child." },
+      "31": { "title": "Article 31", "short": "Rest, play, culture, arts", "full": "Every child has the right to relax, play and take part in a wide range of cultural and artistic activities." },
+      "19": { "title": "Article 19", "short": "Protection from violence", "full": "Governments must do all they can to ensure that children are protected from all forms of violence, abuse, neglect and bad treatment." }
+    }
+  },
+  "about": {
+    "headerTitle": "About the Cyprus Children's Parliament",
+    "headerDesc": "Established in 2001, we are a child-led institution giving voice to persons under 18.",
+    "historyTitle": "Our History",
+    "historyP1": "The Cyprus Children's Parliament was set up in 2001. It was a development of the traditional event of CHILDREN'S WEEK, during which a group of children occupied symbolically the seats of the members of our Parliament.",
+    "historyP2": "With the support of the President of our Parliament, it was decided that the symbolic event should develop into a formal session in imitation of the normal sessions of Parliament and under his own Chairmanship. The next step was to set up the Children's Parliament as a standing body, in operation throughout the year and not only as an event of Children's Week.",
+    "whatIsTitle": "What is the CCP?",
+    "whatIsP1": "The Cyprus Children's Parliament (CCP) is a child-led non-governmental institution established in the year 2000 with the primary aim to promote children's participatory rights and give voice to persons under the age of 18 that otherwise was more or less \"invisible\".",
+    "whatIsP2": "It consists of 83 members (56 Greek Cypriots, 24 Turkish Cypriots, 1 Maronite, 1 Latin and 1 Armenian, representing the 5 ethnic groups recognized by the Constitution). The members come from all the cities in Cyprus (Nicosia, Limassol, Larnaca, Paphos, Paralimni) elected once every two years by students in all High Schools. The duration of our services is 2 years.",
+    "whatIsP3": "We have meetings within our district every beginning of the month, and every 3 months in a Pancyprian level. Once a year we have a meeting at the National Parliament with the President of the House of Representatives.",
+    "missionTitle": "What is our Mission?",
+    "mission1": "To try our best to deal with any issues that affect our peers and propose solutions to the problem.",
+    "mission2": "To provide equal attention to all issues that affect different children from all socioeconomic levels.",
+    "mission3": "To Demand the implementation of the Convention on the Rights of the Child in Cyprus.",
+    "mission4": "To encourage children members of the CCP to express their opinion and afterwards to justify them with arguments.",
+    "mission5": "To promote our institution and let children in Cyprus know that there is someone fighting for their rights with pure motivation.",
+    "accTitle": "Our Accomplishments",
+    "acc1": "2005: Suggested changes in the punitive regulations in high schools to give the opportunity to children to understand their mistake before facing consequences.",
+    "acc2": "2006: Sped-up structural changes in school buildings to accommodate children with special needs.",
+    "acc3": "2007: Protested in front of the presidential palace demanding the appointment of a Commissioner on Children's Rights. Due to the intensity of the protest, the president decided to appoint a commissioner!",
+    "impactTitle": "Value and Impact in our Lives",
+    "impactQuote": "\"The CCP has impacted our lives in different ways. It has helped us to cultivate our critical thinking and stay more aware of any social issues. It has helped to build up our teamwork skills and boost our self-confidence. This institution develops active citizens that will care and fight for their rights.\"",
+    "sidebarTitle": "Supported by PCCPWC",
+    "sidebarDesc": "The Pancyprian Coordinating Committee for the Protection and Welfare of Children safeguards and promotes Children's Rights and serves as the support body for the CCP.",
+    "sidebarBtn": "Visit PCCPWC",
+    "sidebarGraphic": "Empowering the Youth"
+  }
+}
