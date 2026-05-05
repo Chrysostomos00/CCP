@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import avatarJumping from '../assets/avatar-jumping.png';
+import avatarReading from '../assets/avatar-reading.png';
 import styles from './Home.module.css';
 
 export default function Home() {
@@ -30,7 +32,7 @@ export default function Home() {
             </Link>
           </div>
           <motion.img 
-            src="/src/assets/avatar-jumping.png" 
+            src={avatarJumping}
             alt="Jumping Avatar" 
             className={styles.avatarJumping}
             initial={{ opacity: 0, y: 100 }}
@@ -52,7 +54,7 @@ export default function Home() {
         >
           <div className={styles.rightsCard}>
             <div className={styles.rightsGraphics}>
-              <img src="/src/assets/avatar-reading.png" alt="Reading Avatar" className={styles.avatarReading} />
+              <img src={avatarReading} alt="Reading Avatar" className={styles.avatarReading} />
             </div>
             <div className={styles.rightsText}>
               <h2>{t('home.rightsCtaTitle')}</h2>

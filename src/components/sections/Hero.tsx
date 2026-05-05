@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import avatarWaving from '../../assets/avatar-waving.png';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -37,7 +38,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <div className={styles.mainImagePlaceholder}>
-            <img src="/src/assets/avatar-waving.png" alt="Waving Avatar" className={styles.avatarWaving} />
+            <img src={avatarWaving} alt="Waving Avatar" className={styles.avatarWaving} />
           </div>
         </motion.div>
       </div>

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ChevronRight, ChevronLeft } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import foniLogo from '../../assets/foni_logo.png';
 import styles from './FoniAmbassadors.module.css';
 
 export default function FoniAmbassadors() {
@@ -37,7 +38,7 @@ export default function FoniAmbassadors() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <img src="/src/assets/foni_logo.png" alt="FONI Logo" className={styles.foniLogo} />
+            <img src={foniLogo} alt="FONI Logo" className={styles.foniLogo} />
             <h2>{t('foni.title').split(',')[0]},<br/>{t('foni.title').split(',')[1]}</h2>
             <p>{t('foni.desc')}</p>
           </motion.div>

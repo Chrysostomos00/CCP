@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Globe } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import ccpLogo from '../../assets/ccp_logo.png';
 import styles from './Header.module.css';
 
 export default function Header() {
@@ -34,7 +35,7 @@ export default function Header() {
       <div className={`${styles.headerInner}`}>
         <Link to="/" className={styles.logoContainer} onClick={() => isScrolled && setIsMenuOpen(false)}>
           <div className={styles.logoIcon}>
-            <img src="/src/assets/ccp_logo.png" alt="CCP Logo" className={styles.logoImage} />
+            <img src={ccpLogo} alt="CCP Logo" className={styles.logoImage} />
           </div>
           <div className={styles.logoText}>
             <h1>{t('header.logoTitle1')}</h1>

@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import ccpLogo from '../../assets/ccp_logo.png';
+import pccpwcLogo from '../../assets/pccpwc_logo.png';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -10,7 +12,7 @@ export default function Footer() {
       <div className={`container ${styles.footerGrid}`}>
         <div className={styles.orgInfo}>
           <div className={styles.logoRow}>
-            <img src="/src/assets/ccp_logo.png" alt="CCP Logo" className={styles.ccpLogo} />
+            <img src={ccpLogo} alt="CCP Logo" className={styles.ccpLogo} />
           </div>
           <p className={styles.footerDesc}>
             {t('footer.desc')}
@@ -37,7 +39,7 @@ export default function Footer() {
 
         <div className={styles.motherOrg}>
           <p className={styles.supportedBy}>{t('footer.supportedBy')}</p>
-          <img src="/src/assets/pccpwc_logo.png" alt="PCCPWC Logo" className={styles.pccpwcLogo} />
+          <img src={pccpwcLogo} alt="PCCPWC Logo" className={styles.pccpwcLogo} />
           <a href="https://pccpwc.org" target="_blank" rel="noopener noreferrer" className={styles.pccpwcLink}>
             {t('footer.pccpwcLink')}
           </a>
