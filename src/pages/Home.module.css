@@ -3,13 +3,22 @@
   background-color: white;
   background-image: radial-gradient(var(--color-gray-200) 1px, transparent 1px);
   background-size: 20px 20px;
-  text-align: center;
   position: relative;
+  overflow: hidden;
+}
+
+.aboutGrid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-xl);
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .aboutContent {
-  max-width: 800px;
-  margin: 0 auto;
+  flex: 1;
+  text-align: left;
 }
 
 .aboutContent h2 {
@@ -46,18 +55,23 @@
 }
 
 .avatarJumping {
-  position: absolute;
-  bottom: 20px;
-  right: 10%;
-  width: 160px;
+  width: 320px;
   height: auto;
-  z-index: 10;
-  pointer-events: none;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
 }
 
 @media (max-width: 1024px) {
+  .aboutGrid {
+    flex-direction: column;
+    text-align: center;
+  }
+  .aboutContent {
+    text-align: center;
+  }
   .avatarJumping {
-    display: none;
+    width: 250px;
+    margin-top: var(--spacing-lg);
   }
 }
 
@@ -101,9 +115,16 @@
 }
 
 .avatarReading {
-  width: 200px;
+  width: 400px;
   height: auto;
   object-fit: contain;
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.15));
+}
+
+@media (max-width: 1024px) {
+  .avatarReading {
+    width: 280px;
+  }
 }
 
 .rightsText {

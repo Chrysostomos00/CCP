@@ -24,22 +24,24 @@ export default function Home() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <div className={styles.aboutContent}>
-            <h2>{t('home.aboutBriefTitle')}</h2>
-            <p>{t('home.aboutBriefText')}</p>
-            <Link to="/about" className={styles.primaryLink}>
-              {t('home.btnLearnMore')} <ArrowRight size={20} />
-            </Link>
+          <div className={styles.aboutGrid}>
+            <div className={styles.aboutContent}>
+              <h2>{t('home.aboutBriefTitle')}</h2>
+              <p>{t('home.aboutBriefText')}</p>
+              <Link to="/about" className={styles.primaryLink}>
+                {t('home.btnLearnMore')} <ArrowRight size={20} />
+              </Link>
+            </div>
+            <motion.img 
+              src={avatarJumping}
+              alt="Jumping Avatar" 
+              className={styles.avatarJumping}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            />
           </div>
-          <motion.img 
-            src={avatarJumping}
-            alt="Jumping Avatar" 
-            className={styles.avatarJumping}
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          />
         </motion.div>
       </section>
 
