@@ -1,17 +1,47 @@
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import ReactMarkdown from 'react-markdown';
+import styles from './News.module.css';
+
+interface Post {
+  path: string;
+  title: string;
+  date: string;
+  category: string;
+  thumbnail: string;
+  body: string;
+}
 
 export default function News() {
   const { t } = useTranslation();
+  const [posts, setPosts] = useState<Post[]>([]);
+
+  useEffect(() => {
+    // Vite's import.meta.glob to dynamically load all JSON files from the news content folder
+    const jsonModules = import.meta.glob('../content/news/*.json', { eager: true });
+    
+    const loadedPosts = Object.keys(jsonModules).map((path) => {
+      const data = jsonModules[path] as Omit<Post, 'path'>;
+      return {
+        path,
+        ...data,
+      };
+    });
+
+    // Sort by date descending
+    loadedPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    
+    setPosts(loadedPosts);
+  }, []);
 
   return (
-    <div style={{ backgroundColor: 'var(--color-gray-50)', minHeight: '100vh', paddingBottom: 'var(--spacing-xl)' }}>
-      <div style={{ background: 'var(--color-blue)', color: 'white', padding: 'var(--spacing-xl) 0', textAlign: 'center', marginBottom: 'var(--spacing-lg)' }}>
+    <div className={styles.pageContainer}>
+      <div className={styles.pageHeader}>
         <div className="container">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }} 
             animate={{ opacity: 1, y: 0 }}
-            style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', color: 'white' }}
           >
             {t('nav.news')}
           </motion.h1>
@@ -19,7 +49,6 @@ export default function News() {
             initial={{ opacity: 0, y: 20 }} 
             animate={{ opacity: 1, y: 0 }} 
             transition={{ delay: 0.2 }}
-            style={{ fontSize: '1.25rem', opacity: 0.9 }}
           >
             Stay updated with the latest articles, posts, and upcoming events from the Cyprus Children's Parliament.
           </motion.p>
@@ -27,40 +56,38 @@ export default function News() {
       </div>
 
       <div className="container">
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
-          
-          {/* Main Articles Area (Mock structure) */}
-          <div style={{ gridColumn: '1 / -1' }}>
-            <h2 style={{ color: 'var(--color-orange)', borderBottom: '2px solid var(--color-gray-200)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>Latest News</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
-              {[1, 2, 3].map((item) => (
-                <div key={item} style={{ background: 'white', borderRadius: '1rem', padding: '1.5rem', boxShadow: 'var(--shadow-md)' }}>
-                  <div style={{ width: '100%', height: '150px', backgroundColor: 'var(--color-gray-100)', borderRadius: '0.5rem', marginBottom: '1rem' }}></div>
-                  <span style={{ fontSize: '0.85rem', color: 'var(--color-blue)', fontWeight: 600 }}>May 2026</span>
-                  <h3 style={{ margin: '0.5rem 0', color: 'var(--color-gray-900)' }}>Mock Article Title {item}</h3>
-                  <p style={{ color: 'var(--color-gray-600)', fontSize: '0.95rem' }}>This is a placeholder for content that will be pulled from the WordPress REST API later.</p>
+        <div className={styles.newsGrid}>
+          {posts.map((post) => (
+            <motion.article 
+              key={post.path}
+              className={styles.postCard}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              {post.thumbnail && (
+                <div className={styles.thumbnailWrapper}>
+                  <img src={post.thumbnail} alt={post.title} className={styles.thumbnail} />
                 </div>
-              ))}
-            </div>
-          </div>
+              )}
+              <div className={styles.postContent}>
+                <div className={styles.postMeta}>
+                  <span className={styles.categoryBadge}>{post.category}</span>
+                  <span className={styles.date}>{new Date(post.date).toLocaleDateString()}</span>
+                </div>
+                <h2 className={styles.postTitle}>{post.title}</h2>
+                <div className={styles.markdownBody}>
+                  <ReactMarkdown>{post.body}</ReactMarkdown>
+                </div>
+              </div>
+            </motion.article>
+          ))}
 
-          {/* Events Sidebar (Mock structure) */}
-          <div style={{ gridColumn: '1 / -1', marginTop: '2rem' }}>
-            <h2 style={{ color: 'var(--color-purple)', borderBottom: '2px solid var(--color-gray-200)', paddingBottom: '0.5rem', marginBottom: '1.5rem' }}>Upcoming Events</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-               <div style={{ background: 'white', borderRadius: '1rem', padding: '1rem', display: 'flex', gap: '1.5rem', alignItems: 'center', boxShadow: 'var(--shadow-sm)' }}>
-                  <div style={{ textAlign: 'center', minWidth: '80px' }}>
-                    <div style={{ fontSize: '1.5rem', fontWeight: 800, color: 'var(--color-purple)' }}>15</div>
-                    <div style={{ fontSize: '0.9rem', color: 'var(--color-gray-600)', textTransform: 'uppercase' }}>June</div>
-                  </div>
-                  <div>
-                    <h4 style={{ margin: '0 0 0.25rem 0', color: 'var(--color-gray-900)' }}>Pancyprian Meeting</h4>
-                    <p style={{ margin: 0, color: 'var(--color-gray-600)', fontSize: '0.9rem' }}>Nicosia, House of Representatives</p>
-                  </div>
-               </div>
+          {posts.length === 0 && (
+            <div className={styles.emptyState}>
+              <p>No news articles found. Head over to the admin portal to write your first post!</p>
             </div>
-          </div>
-
+          )}
         </div>
       </div>
     </div>
