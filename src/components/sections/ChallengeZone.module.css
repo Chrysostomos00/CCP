@@ -1,0 +1,116 @@
+.zoneContainer {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-gray-100);
+}
+
+.zoneHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xl);
+}
+
+.iconWrapper {
+  background: var(--color-yellow);
+  color: var(--color-orange);
+  padding: 0.75rem;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zoneHeader h2 {
+  font-size: 1.8rem;
+  color: var(--color-gray-900);
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.challengeCard {
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.challengeCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.bgOrange {
+  background: linear-gradient(135deg, var(--color-orange), #ff6b6b);
+}
+
+.bgPurple {
+  background: linear-gradient(135deg, var(--color-purple), #9d4edd);
+}
+
+.cardContent {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+}
+
+.cardContent h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cardContent p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.playBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  color: var(--color-gray-900);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: var(--shadow-sm);
+}
+
+.playBtn:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-md);
+}
+
+.cardGraphic {
+  font-size: 4rem;
+  opacity: 0.2;
+  position: absolute;
+  right: -10px;
+  bottom: -20px;
+  z-index: 1;
+  transform: rotate(-15deg);
+}
+
+@media (max-width: 768px) {
+  .zoneContainer {
+    padding: var(--spacing-md);
+  }
+}

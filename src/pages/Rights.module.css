@@ -22,3 +22,26 @@
   margin: 0 auto;
   opacity: 0.9;
 }
+
+.dashboardLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-xl) 0;
+  align-items: flex-start;
+}
+
+@media (min-width: 1024px) {
+  .dashboardLayout {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.mainContent {
+  width: 100%;
+}
+
+.sidebar {
+  position: sticky;
+  top: 100px; /* Below the header */
+}
