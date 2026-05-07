@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: Chrysostomos00/CCP
+  branch: master
+  # For GitHub Pages without a server, we typically need a free OAuth proxy
+  # or PKCE (if supported/configured in GitHub).
+  # We will use an open-source free proxy for Decap:
+  # https://github.com/vveltman/decap-cms-github-oauth-provider
+  # We will set this up securely later.
+
+media_folder: "public/uploads"
+public_folder: "/CCP/uploads" # Has to include the base path for Vite
+site_url: "https://Chrysostomos00.github.io/CCP"
+display_url: "https://Chrysostomos00.github.io/CCP"
+
+collections:
+  - name: "news"
+    label: "News & Events"
+    folder: "src/content/news"
+    create: true
+    extension: "json"
+    format: "json"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Category", name: "category", widget: "select", options: ["News", "Event", "Press Release", "Announcement"]}
+      - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
