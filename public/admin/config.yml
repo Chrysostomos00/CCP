@@ -2,13 +2,11 @@ backend:
   name: github
   repo: Chrysostomos00/CCP
   branch: master
-  auth_type: pkce
-  app_id: Ov23liOFEDinktujsUzj
+  base_url: /
+  auth_endpoint: api/auth
 
 media_folder: "public/uploads"
-public_folder: "/CCP/uploads" # Has to include the base path for Vite
-site_url: "https://Chrysostomos00.github.io/CCP"
-display_url: "https://Chrysostomos00.github.io/CCP"
+public_folder: "/uploads"
 
 collections:
   - name: "news"
