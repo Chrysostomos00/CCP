@@ -2,7 +2,7 @@ backend:
   name: github
   repo: Chrysostomos00/CCP
   branch: master
-  base_url: /
+  base_url: https://ccp-five-chi.vercel.app
   auth_endpoint: api/auth
 
 media_folder: "public/uploads"
