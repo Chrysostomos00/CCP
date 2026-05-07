@@ -2,11 +2,8 @@ backend:
   name: github
   repo: Chrysostomos00/CCP
   branch: master
-  # For GitHub Pages without a server, we typically need a free OAuth proxy
-  # or PKCE (if supported/configured in GitHub).
-  # We will use an open-source free proxy for Decap:
-  # https://github.com/vveltman/decap-cms-github-oauth-provider
-  # We will set this up securely later.
+  auth_type: pkce
+  app_id: Ov23liOFEDinktujsUzj
 
 media_folder: "public/uploads"
 public_folder: "/CCP/uploads" # Has to include the base path for Vite
