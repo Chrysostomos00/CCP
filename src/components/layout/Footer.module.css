@@ -22,18 +22,17 @@
 }
 
 .logoRow {
-  background: white;
-  padding: 0.75rem;
-  border-radius: var(--radius-md);
-  display: inline-block;
-  margin-bottom: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
   align-self: flex-start;
 }
 
 .ccpLogo {
-  height: 50px;
-  width: auto;
+  width: 250px;
+  height: auto;
   object-fit: contain;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
 }
 
 .footerDesc {
